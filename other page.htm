@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily</title>
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Fredoka:wght@500&family=Irish+Grover&family=Kaisei+Decol:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Kaisei Decol', 'Fredoka', 'Fraunces','Irish Grover';
+    background: linear-gradient(169deg, #F8F0F0 36.09%, rgba(250, 226, 144, 0.00) 72.49%);
+}
+
+h1{
+    position: relative;
+}
+h1::before{
+    color: #B68E77;
+    position: absolute;
+    content: url(github.svg);
+    left: -35px;
+    margin-right: 10px;
+}
+
+header{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0px 50px;
+    display: flex;
+    align-items: center; /*上下居中*/
+    position: sticky;
+    top: 20px;
+}
+header a{
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+header h1{margin-right: auto;}
+
+ul.menu{
+    display: flex;
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+    gap: 8px;
+}
+ul.menu a{
+    /* background-color: whitesmoke; */
+    padding: 10px 20px;
+}
+ul.menu a:hover{
+    background-color: burlywood;
+    border-radius: 12px;
+}
+
+main{
+    padding-top: 55px;
+    padding-left: 20px;
+    width: 100%; height: 350px;
+    background-image: url(MV5BOTNlMThiYWEtZDFlMy00ZTdlLTkyMzAtOTg0MDE2ODBkOWYzXkEyXkFqcGdeQXVyOTc4OTAwMjU@._V1_.jpg);
+    background-size: cover;
+    border-radius: 16px;
+    margin-bottom: 50px;
+    opacity: 0.85;
+}
+
+.main_title{
+    font-size: 48px;
+    line-height: 250px;
+    text-shadow: 0 0 3px black;
+    width: 200px;
+}
+
+.main_intro{
+    font-family: 'Fraunces';
+    font-size: 24px;
+    line-height: 10px;
+    color:black;
+    text-shadow: 0 0 3px black;
+    position: relative;
+    top: -75px;
+    padding-left: 5px;
+
+}
+
+.card{
+    width: 100%;
+    border-radius: 16px;
+}
+
+.card-image{
+    font-size: 26px;
+    text-align: center;
+    background-size: cover;
+    width: 250px;
+    height: 200px;
+    margin-left: 60px;
+    padding: 10px 50px;
+    line-height: 420px;
+}
+
+.toy .card-image{
+    background-image: url(cat_tomomo.png);
+}
+.litter .card-image{
+    background-image: url(pet_nekosuna.png);
+}
+.food .card-image{
+    background-image: url(cat12_moyou_mike.png);
+}
+.house .card-image{
+    background-image: url(cat3_2_heart.png);
+}
+.Shampoo .card-image{
+    background-image: url(cat_hand_white.png);
+}
+.Snack .card-image{
+    background-image: url(cat_tomomo_uruuru.png);
+}
+
+.card-button{
+    font-size: 15px;
+    width: 100%;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 16px;
+    border: 2px solid #A5ABA1;
+    box-shadow: 3px 2px 3px black;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+section{
+    display: flex;
+    gap: 80px;
+}
+
+footer{
+    color: gray;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    background-color: #efefef;
+    font-size: 13px;
+    border-top: 5px solid #e2e2e2;
+}
+.bg-left{
+    position:absolute;
+    left: -260px;
+    top: 320px;
+    transform: rotate(50.139deg);
+    z-index: -1;
+    opacity: 0.65;
+}
+.bg-right{
+    position: absolute;
+    /* display: flex; */
+    right: -100px;
+    top: 300px;
+    transform: rotate(16.664deg);
+    flex-shrink: 2;
+    z-index: -3; /*讓圖片退到網頁內容後面 */
+    opacity: 0.65;
+}
+</style>
+
+<body>
+    <header>
+        <h1 class="logo"><a href="">PurrParadise</a></h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#About">About</a></li>
+                <li><a href="#NEWS">News</a></li>
+                <li><a href="#Sale">Sale</a></li>
+                <li><a href="#Other">Other</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main_title">養猫須知</div>
+        <div class="main_intro">Road to Professional Cat Keeper</div>
+    </main>
+    
+    <section>
+        <div class="card toy">
+            <h4 class="card-image">Toys</h4>
+            <button class="card-button">Learn more about it</button>
+        </div>
+
+        <div class="card litter">
+            <h4 class="card-image">Litter box</h4>
+            <button class="card-button">Learn more about it</button>
+        </div>
+
+        <div class="card food">
+            <h4 class="card-image">Food</h4>
+            <button class="card-button">Learn more about it</button>
+        </div>
+    </section>
+    <section>
+        <div class="card house">
+            <h4 class="card-image">House</h4>
+            <button class="card-button">Learn more about it</button>
+        </div>
+
+        <div class="card Shampoo">
+            <h4 class="card-image">Shampoo</h4>
+            <button class="card-button">Learn more about it</button>
+        </div>
+
+        <div class="card Snack">
+            <h4 class="card-image">Snack</h4>
+            <button class="card-button">Learn more about it</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2023 Cat Is The God. All Rights Reserved </p>
+    </footer>
+    <img src="1084885.png" alt="" class="bg-left">
+    <img src="1084885.png" alt="" class="bg-right">
+</body>
+</html>
